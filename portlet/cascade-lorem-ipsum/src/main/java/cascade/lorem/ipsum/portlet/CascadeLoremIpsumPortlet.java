@@ -30,5 +30,9 @@ public class CascadeLoremIpsumPortlet extends MVCPortlet {
 	 public static String getParsedValue() {
 		 return StringPool.BLANK;
 	 }
+	 
+	 public static String getShutdownByLastName(String name) {
+		 return name;
+	 }
 	
 }
