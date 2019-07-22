@@ -3,6 +3,7 @@ package cascade.lorem.ipsum.portlet;
 import cascade.lorem.ipsum.constants.CascadeLoremIpsumPortletKeys;
 
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
+import com.liferay.portal.kernel.util.StringPool;
 
 import javax.portlet.Portlet;
 
@@ -25,4 +26,9 @@ import org.osgi.service.component.annotations.Component;
 	service = Portlet.class
 )
 public class CascadeLoremIpsumPortlet extends MVCPortlet {
+	
+	 public static String getParsedValue() {
+		 return StringPool.BLANK;
+	 }
+	
 }
